@@ -46,4 +46,7 @@ urlpatterns = [
     path('single-student/<int:id>', views.single_student),
     path('new-student/<str:name>', views.new_student),
 
+    # task-5
+    path('find/<str:name>', views.findnadreturn),
+
 ]

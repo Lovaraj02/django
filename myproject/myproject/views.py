@@ -84,3 +84,17 @@ def new_student(request, name):
     students.append(new_student)
     return JsonResponse(new_student)
 
+
+# task-5
+def findnadreturn(request, name):
+    result = []
+
+    for student in students:
+        if name.lower() in student["name"].lower():
+            result.append(student)
+
+    if result:
+        return JsonResponse(result, safe=False)
+
+    return JsonResponse({"error": "not found"})
+
