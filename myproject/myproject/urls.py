@@ -32,7 +32,18 @@ urlpatterns = [
     path('contact/', views.contact),
 
 
-    # *** Task-1 urls ***
-    path('user/<str:name>/<int:id>', views.user)
+    # *** Task-2 urls ***
+    path('user/<str:name>/<int:id>', views.user),
     # path('user/<str:name>', views.user)
+
+
+    # *** Task-3 urls ***
+    path('calculator/<int:n1>/<int:n2>', views.calculator),
+
+
+    # task-4
+    path('all-students', views.get_students),
+    path('single-student/<int:id>', views.single_student),
+    path('new-student/<str:name>', views.new_student),
+
 ]
