@@ -20,8 +20,18 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.myres),
-    path('home/', views.home, name='home'),
-    path('res/', views.jsnres),
-    path('rend/', views.render_fun),
+    # path('',views.myres),
+    # path('home/', views.home, name='home'),
+    # path('res/', views.jsnres),
+    # path('rend/', views.render_fun),
+
+
+    # *** Task-1 urls ***
+    path('', views.home),
+    path('about/', views.about),
+    path('contact/', views.contact),
+
+
+    # *** Task-1 urls ***
+    path('user/<str:name>', views.user)
 ]
