@@ -51,5 +51,5 @@ def contact(request):
         Hello, john
 '''
 
-def user(request, name):
-    return HttpResponse("<b>Hello</b> " + name)
+def user(request, name,id):
+    return HttpResponse(f"Hii im {name} with {id} age")

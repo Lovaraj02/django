@@ -33,5 +33,6 @@ urlpatterns = [
 
 
     # *** Task-1 urls ***
-    path('user/<str:name>', views.user)
+    path('user/<str:name>/<int:id>', views.user)
+    # path('user/<str:name>', views.user)
 ]
