@@ -2,10 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Django Home</title>
+
+    <!-- Load static -->
+    {% load static %}
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
 </head>
 <body>
-    <h1>This is html page</h1>
+
+    <div class="container">
+        <h1>Welcome to Django</h1>
+        <p id="message">This is rendered using templates.</p>
+
+        <button onclick="changeText()">Click Me</button>
+    </div>
+
+    <!-- Link JS -->
+    <script src="{% static 'js/home.js' %}"></script>
 </body>
 </html>
