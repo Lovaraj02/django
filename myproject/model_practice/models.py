@@ -16,4 +16,4 @@ class Employee(models.Model):
     department = models.CharField(max_length=100)
 
     def __str__(self):
-        return f"{self.name} - {self.department}"
+        return f"{self.name} - {self.salary} - {self.department}"
