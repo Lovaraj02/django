@@ -52,6 +52,11 @@ urlpatterns = [
 
 
     # Models urls from model_practice App
-    path('emp/', include('model_practice.urls'))
+    path('emp/', include('model_practice.urls')),
+
+
+    # urls from practice_app
+    path('pam/', include('practice_app_model.urls'))
+
 
 ]
