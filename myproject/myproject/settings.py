@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'myproject',
     'firstapp_model_learning',
     'model_practice',
+    'practice_app_model',
 ]
 
 MIDDLEWARE = [

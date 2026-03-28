@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,9 +10,54 @@
     {% for emp in employees %}
     <ul>
         <li>{{emp.name}}</li>
+        <li>{{emp.age}}</li>
         <li>{{emp.salary}}</li>
         <li>{{emp.department}}</li>
+        <li>{{emp.is_active}}</li>
     </ul>
     {% endfor %}
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+</head>
+<body>
+
+    <h1>High Salary Employees (>30000)</h1>
+    {% for emp in high_salary_employees %}
+    <ul>
+        <li>{{ emp.name }}</li>
+        <li>{{ emp.age }}</li>
+        <li>{{ emp.salary }}</li>
+        <li>{{ emp.department }}</li>
+        <li>{{ emp.is_active }}</li>
+    </ul>
+    {% empty %}
+    <p>No employees found</p>
+    {% endfor %}
+
+    <h1>Young Employees (Age < 25)</h1>
+    {% for emp in young_employees %}
+    <ul>
+        <li>{{ emp.name }}</li>
+        <li>{{ emp.age }}</li>
+        <li>{{ emp.salary }}</li>
+        <li>{{ emp.department }}</li>
+        <li>{{ emp.is_active }}</li>
+    </ul>
+    {% empty %}
+    <p>No employees found</p>
+    {% endfor %}
+
+    <h2>Is Raju Present?</h2>
+    <p>{{ raju_exists }}</p>
+
 </body>
 </html>
