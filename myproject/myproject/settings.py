@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'firstapp_model_learning',
     'model_practice',
     'practice_app_model',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

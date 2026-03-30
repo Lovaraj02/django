@@ -56,7 +56,12 @@ urlpatterns = [
 
 
     # urls from practice_app
-    path('pam/', include('practice_app_model.urls'))
+    path('pam/', include('practice_app_model.urls')),
+
+
+    # signup urls of signinapp
+
+    path('signinapp/', include('signinapp.urls')),
 
 
 ]
