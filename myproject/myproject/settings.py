@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'model_practice',
     'practice_app_model',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
