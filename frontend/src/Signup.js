@@ -1,4 +1,5 @@
 import { API } from "./api";
+import './App.css';
 import { useState } from "react";
 
 const Signup = () => {
@@ -33,29 +34,31 @@ const handleSubmit = (e) => {
 
   return (
     <div>
-      <h2>Signup</h2>
+      <h1>Signup</h1>
 
       <form onSubmit={handleSubmit}>
-        <input
+        <input className="in"
           type="text"
           name="username"
           placeholder="Username"
           onChange={handleChange}
         />
+        {/* <br/> */}
 
-        <input
+        <input className="in"
           type="email"
           name="email"
           placeholder="Email"
           onChange={handleChange}
         />
-
-        <input
+        {/* <br/> */}
+        <input className="in"
           type="password"
           name="password"
           placeholder="Password"
           onChange={handleChange}
         />
+        {/* <br/> */}
 
         <button type="submit">Signup</button>
       </form>

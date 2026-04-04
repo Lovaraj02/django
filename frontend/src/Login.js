@@ -1,5 +1,6 @@
 import { API } from "./api";
 import { useState } from "react";
+import './App.css';
 
 const Login = () => {
   const [form, setForm] = useState({
@@ -34,10 +35,10 @@ const Login = () => {
 
   return (
     <div>
-      <h2>Login</h2>
+      <h1>Login</h1>
 
       <form onSubmit={handleSubmit}>
-        <input
+        <input className="in"
           type="email"
           name="email"
           placeholder="Email"
@@ -45,7 +46,7 @@ const Login = () => {
           onChange={handleChange}
         />
 
-        <input
+        <input className="in"
           type="password"
           name="password"
           placeholder="Password"
