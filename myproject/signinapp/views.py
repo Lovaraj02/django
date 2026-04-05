@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view, authentication_classes
 from django.contrib.auth import authenticate, login
 from django.views.decorators.csrf import csrf_exempt
-
+# imp
 @api_view(['POST'])
 @authentication_classes([])
 def signup_view(request):

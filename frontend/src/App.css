@@ -19,7 +19,7 @@ form{
 .in, button{
   width: 17%;
   height: 33px;
-  border-radius: 50px;
+  border-radius: 20px;
   border: 2px solid green;
   /* cursor: pointer; */
 }
