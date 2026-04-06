@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'rest_framework',
 ]
 
+# Abstract Model
+AUTH_USER_MODEL = 'core.User'
+
 # jwt
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES':(
