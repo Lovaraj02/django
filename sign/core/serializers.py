@@ -10,10 +10,12 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = ['username', 'email', 'password']
 
-    def validate_emai(self,value):
+    def validate_email(self,value):
         if User.objects.filter(email=value).exists():
+            print({'email':value})
             raise serializers.ValidationError("Email already exits")
-        return Response({'email':value})
+        print({'email':value})
+        return value
     def create(self, validated_data):
         return User.objects.create_user(**validated_data)
     

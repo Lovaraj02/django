@@ -12,7 +12,8 @@ class RegisterApiView(APIView):
         serializer = UserSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return Response({'msg':'User Registered successfully'})
+            # print(serializer)
+            return Response({'msg':'User Registered successfully', 'details':serializer.data})
         return Response(serializer.errors)
 
 # ---------------display login user details---------------

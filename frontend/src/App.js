@@ -1,11 +1,12 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Signup from "./Signup";
 import Login from "./Login";
 import Register from "./Register";
+import Log from "./Log";
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <div>
         <nav>
           <Link to="/register">Signup</Link> |{" "}
@@ -17,7 +18,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
         </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 };
 

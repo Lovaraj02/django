@@ -13,7 +13,7 @@ const Register = ()=>{
     
     const [msg, setMsg] = useState("");
     
-    
+    // destructuring the obj(formData) caz cant return the full obj at a time
     const hanldeData = (e)=>{
         setFormData({
             ...formData,

@@ -4,6 +4,8 @@ from django.db import models
 # Create Product model:
 # name, price, stock, category, created_at
 
+
+
 class Product(models.Model):
     name = models.CharField(max_length=100)
     price = models.DecimalField(max_digits=8, decimal_places=2)
